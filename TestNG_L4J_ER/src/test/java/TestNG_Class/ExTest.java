@@ -22,7 +22,7 @@ public class ExTest extends Utilities_ {
            
   @Test
   public void tc2_Registratin_vatidation() {
-	  test=reports.createTest("Validate Login ").assignAuthor ("Maria").assignDevice("window").assignCategory("");
+	  test=reports.createTest("Validate Login ").assignAuthor ("Maria").assignDevice("window").assignCategory("smoke");
 	  //type email and password in login field 
 	  // click on login button 
 	  test.warning("alert Displaying");
@@ -35,7 +35,7 @@ public class ExTest extends Utilities_ {
   
   @Test
   public void tc3() {
-	  test=reports. createTest("Validate Dashboard ").assignAuthor ("Maria"). assignCategory("") ;
+	  test=reports. createTest("Validate Dashboard ").assignAuthor ("Maria"). assignCategory("regression") ;
 			  //click on dashboard 
 			  // verify assert the Title
           test. fail("Title is not verified");

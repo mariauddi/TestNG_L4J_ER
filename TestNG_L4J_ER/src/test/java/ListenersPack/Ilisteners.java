@@ -28,7 +28,7 @@ public class Ilisteners extends Utilities_ implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		this.driver = ((Utilities_)result.getInstance()).driver;
 		try {
-			screenshort("failed");
+			screenshort("Failed");
 		} catch (IOException e) {
 			
 			e.printStackTrace();}}

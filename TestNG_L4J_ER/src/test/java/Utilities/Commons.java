@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -21,7 +22,7 @@ public class Commons {
 	  public WebDriver driver;
 	  public Logger log = (Logger) LogManager.getLogger(Commons.class);
 	  public String ud= System.getProperty("user.dir");
-	  
+	  public ITestResult result;
 	  
 	  public ExtentReports reports = new ExtentReports();//extent
 	  public ExtentSparkReporter htmlreporter = new ExtentSparkReporter("Results/MariaExtenReport_" +System.currentTimeMillis()+".html"); //spark
@@ -57,6 +58,8 @@ public class Commons {
 		
 
 		public void configureReport() {
+			
+			reports.attachReporter(htmlreporter);
 			//add system information/environment information to report
 			reports.setSystemInfo("Machine","TestPC1");
 			reports.setSystemInfo("os", "windows11");

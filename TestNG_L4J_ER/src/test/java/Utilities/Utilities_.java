@@ -25,7 +25,7 @@ public class Utilities_ extends Commons {
     @BeforeTest
     public void beforetest() {
     	configureReport();
-    	reports.attachReporter(htmlreporter);
+    	
     		
     	
                   }
