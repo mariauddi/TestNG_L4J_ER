@@ -118,7 +118,7 @@
           
           <configuration>
           <suiteXmlFiles>
-               <suiteXmlFile>PipeLine\testng_J1.xml/${xmlFiles}</suiteXmlFile>
+               <suiteXmlFile>PipeLine\${xmlFiles}</suiteXmlFile>
           </suiteXmlFiles>
           </configuration> 
           
