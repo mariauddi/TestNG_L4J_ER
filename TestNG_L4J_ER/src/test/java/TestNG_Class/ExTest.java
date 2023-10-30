@@ -8,7 +8,7 @@ public class ExTest extends Utilities_ {
 	
 	
   @Test
-  public void tci_validate_login_funtionality() {
+  public void tc1_validate_login_funtionality() {
 	  test=reports.createTest ("Launch Browser and Go to Website");
 		  // browser initialized
 		  // implicit wait given
@@ -17,7 +17,9 @@ public class ExTest extends Utilities_ {
 		  //test.log(Status.PASS, "User Launched the Website Successfully"); 
 	     test. info("User Successfully land on Homepage and Title Veified");
 		 //validate page title 
-		 test.pass ("HomePage title verified");}
+		 test.pass ("HomePage title verified");
+		 System.out.println("welcome to easy automation labs.");
+  }
 
            
   @Test
