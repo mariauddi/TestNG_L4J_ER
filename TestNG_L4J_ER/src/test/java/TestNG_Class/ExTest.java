@@ -31,7 +31,8 @@ public class ExTest extends Utilities_ {
 	  //accept the alert
 	  //verified homepage after loging successfuly.
 	  
-	  test.pass ("user logged in to the application successfully");}
+	  test.pass ("user logged in to the application successfully");
+	  System.out.println("welcome to easy automation labs.");}
 
 	
   
